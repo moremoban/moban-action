@@ -1,22 +1,28 @@
-# Hello world docker action
+# mó bǎn - 模板 - github action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+This will execute your mobanfile and synchronize your github repo
 
-## Inputs
+## Optional input
 
-### `who-to-greet`
+### `mobanfile`
 
-**Required** The name of the person to greet. Default `"World"`.
+**Required** The name of the person to greet. Default `".moban.yml"`.
 
 ## Outputs
 
-### `time`
+All templated files.
 
-The time we greeted you.
 
 ## Example usage
 
-uses: actions/hello-world-docker-action@v1
-with:
-  who-to-greet: 'Mona the Octocat'
+```
+uses: moremoban/moban-action@master
+```
 
+or
+
+```
+uses: moremoban/moban-action@master
+with:
+  mobanfile: your_custom_moban_file_name
+```

@@ -1,0 +1,4 @@
+targets:
+  - output: a.output
+    template: template.jj2
+    configuration: data.yml

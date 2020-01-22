@@ -1,0 +1,11 @@
+on: [push]
+
+jobs:
+  run_moban:
+    runs-on: ubuntu-latest
+    name: synchronize templates via moban
+    steps:
+    - uses: actions/checkout@v1
+    - uses: chfw/moban-action@master
+
+
